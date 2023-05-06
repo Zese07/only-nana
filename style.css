@@ -1,0 +1,160 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    color: #c0dffd;
+    background-color: #4c6c8c;
+}
+
+.bg {
+    background-image: url("src/nana.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: center;
+
+    filter: blur(5px);
+    height: 100%;
+    opacity: 0.25;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transparent {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(57, 82, 123, 0.5);
+    border-radius: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 0px;
+    background-color: rgba(57, 82, 123, 1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+  
+.ecan-img {
+    float: left;
+    max-width: 35%;
+    margin: 10px;
+    margin-right: 0px;
+}
+
+.ecan-txt {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(57, 87, 123, 1);
+}
+
+.nana-img {
+    position: relative;
+    max-width: 20%;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.rank-img {
+    position: relative;
+    max-width: 30%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+}
+
+.nana-txt {
+    position: absolute;
+    text-align: center;
+    font-size: 0.75em;
+    bottom: -2px;
+    margin-right: 145px;
+}
+
+.rank-txt {
+    position: absolute;
+    text-align: center;
+    font-size: 0.75em;
+    bottom: -7px;
+    margin-left: 115px;
+}
+
+.bottom {
+    position: relative;
+    margin: 10px;
+    margin-top: 0px;
+    height: 188px;
+    background-color: rgba(57, 92, 123, 1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.skins-txt, .emotes-txt {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.bottom-skins {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.skin {
+    display: inline-block;
+    max-width: 35%;
+
+}
+
+.emotes-txt {
+    top: 80px;
+}
+
+.bottom-emotes {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.emote {
+    display: inline-block;
+    max-width: 40%;
+
+}
