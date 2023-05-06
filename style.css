@@ -86,6 +86,7 @@ body, html {
     max-width: 20%;
     margin-bottom: 20px;
     margin-right: 50px;
+    transition: transform 0.5s ease;
 }
 
 .rank-img {
@@ -94,6 +95,7 @@ body, html {
     margin-left: 10px;
     margin-bottom: 20px;
     margin-right: 0px;
+    transition: transform 0.5s ease;
 }
 
 .nana-txt {
@@ -144,7 +146,7 @@ body, html {
 .skin {
     display: inline-block;
     max-width: 35%;
-
+    transition: transform 0.5s ease;
 }
 
 .emotes-txt {
@@ -163,5 +165,10 @@ body, html {
 .emote {
     display: inline-block;
     max-width: 40%;
+    transition: transform 0.5s ease;
 
+}
+
+.nana-img:hover, .rank-img:hover, .skin:hover, .emote:hover {
+    transform: scale(1.15);
 }
