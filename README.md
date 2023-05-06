@@ -1,2 +1,2 @@
-# Only-Nana
-Displays my MLBB information only about Nana.
+# Only Nana
+This is a simple website that displays my Mobile Legends: Bang Bang information only about Nana.
