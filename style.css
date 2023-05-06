@@ -63,6 +63,13 @@ body, html {
     text-align: center;
 }
 
+.nana-gif {
+    position: absolute;
+    max-width: 125px;
+    opacity: 0.15;
+    right: 37px;
+}
+
 .middle {
     display: flex;
     align-items: center;
