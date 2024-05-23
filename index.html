@@ -11,65 +11,39 @@
     <img src="src/mlbb.png" alt="Mobile Legends: Bang Bang" class="logo">
     <div class="center">
         <div class="transparent">
-            <div class="top">
-                <img src="src/ecan.png" alt="ECANツ Icon" class="ecan-img">
-                <div class="ecan-txt">
-                    <h2 style="margin-bottom: 0px; margin-top: 0px;">ECANツ</h2>
-                    <p style="margin-top: 0px; font-size: 0.75em;">Only knows how to play Nana.</p>
+            <div class="info" data-tilt data-tilt-glare data-tilt-max-glare="0.35" data-tilt-max="10">
+                <div class="top">
+                    <img src="src/ecan.png" alt="ECANツ Icon" class="ecan-img">
+                    <div class="ecan-txt">
+                        <h2 style="margin-bottom: 0px; margin-top: 0px;">ECANツ</h2>
+                        <p style="margin-top: 0px; font-size: 0.75em;">Only knows how to play Nana.</p>
+                    </div>
+                    <img src="src/nana.gif" alt="Nana" class="nana-gif"> 
                 </div>
-                <img src="src/nana.gif" alt="Nana" class="nana-gif"> 
-            </div>
-            <div class="middle">
-                <img src="src/nana-icon.png" alt="Nana" class="nana-img">
-                <img src="src/rank.png" alt="Highest Rank" class="rank-img">
-                <p class="nana-txt">Hero Power: 4075</p>
-                <p class="rank-txt">Mythical Glory</p>
-            </div>
-            <div class="bottom">
-                <p class="skins-txt">SKINS:</p>
-                <div class="bottom-skins">
-                    <img src="src/nana-cm.png" alt="Nana Clockwork Maid" class="skin">
-                    <img src="src/nana-gp.png" alt="Nana Graveyard Party" class="skin">
-                    <img src="src/nana-sp.png" alt="Nana Slumber Party" class="skin">
-                    <img src="src/nana-cc.png" alt="Nana Cyclone Clash" class="skin">
+                <div class="middle">
+                    <img src="src/nana-icon.png" alt="Nana" class="nana-img">
+                    <img src="src/rank.png" alt="Highest Rank" class="rank-img">
+                    <p class="nana-txt">Hero Power: 4075</p>
+                    <p class="rank-txt">Mythical Glory</p>
                 </div>
-                <p class="emotes-txt">BATTLE EMOTES:</p>
-                <div class="bottom-emotes">
-                    <img src="src/nana-dk.png" alt="Nana Double Kawaii!" class="emote">
-                    <img src="src/nana-nw.png" alt="Nana's Wink" class="emote">
+                <div class="bottom">
+                    <p class="skins-txt">SKINS:</p>
+                    <div class="bottom-skins">
+                        <img src="src/nana-cm.png" alt="Nana Clockwork Maid" class="skin">
+                        <img src="src/nana-gp.png" alt="Nana Graveyard Party" class="skin">
+                        <img src="src/nana-sp.png" alt="Nana Slumber Party" class="skin">
+                        <img src="src/nana-cc.png" alt="Nana Cyclone Clash" class="skin">
+                    </div>
+                    <p class="emotes-txt">BATTLE EMOTES:</p>
+                    <div class="bottom-emotes">
+                        <img src="src/nana-dk.png" alt="Nana Double Kawaii!" class="emote">
+                        <img src="src/nana-nw.png" alt="Nana's Wink" class="emote">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        const center = document.querySelector('.center');
-        
-        center.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-
-            const rect = center.getBoundingClientRect();
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
-
-            const deltaX = mouseX - centerX;
-            const deltaY = mouseY - centerY;
-
-            const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-            const maxDistance = Math.sqrt(rect.width * rect.width / 4 + rect.height * rect.height / 4);
-
-            const maxRotation = 20;
-            const rotateX = (deltaY / maxDistance) * maxRotation;
-            const rotateY = -(deltaX / maxDistance) * maxRotation;
-
-            center.style.transform = `translate(-50%, -50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg) perspective(1000px)`;
-        });
-
-        center.addEventListener('mouseleave', () => {
-            center.style.transform = `translate(-50%, -50%) rotateX(0deg) rotateY(0deg) perspective(1000px)`;
-        });
-    
-    </script>
+    <script src="vanilla-tilt.js"></script>
 </body>
 </html>

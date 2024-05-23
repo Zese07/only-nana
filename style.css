@@ -27,7 +27,11 @@ body, html {
 
 .transparent {
     width: 300px;
-    height: 400px;
+    height: 410px;
+    border-radius: 20px;
+}
+
+.info{
     border-radius: 20px;
 }
 
@@ -47,7 +51,9 @@ body, html {
     background-color: rgba(57, 82, 123, 1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
+    margin-left: 0px;
+    margin-right: 0px;
+    
 }
   
 .ecan-img {
@@ -78,6 +84,8 @@ body, html {
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: rgba(57, 87, 123, 1);
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .nana-img {
@@ -121,6 +129,8 @@ body, html {
     background-color: rgba(57, 92, 123, 1);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .skins-txt, .emotes-txt {
