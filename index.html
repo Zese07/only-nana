@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="bg"></div>
+    <img src="src/mlbb.png" alt="Mobile Legends: Bang Bang" class="logo">
     <div class="center">
         <div class="transparent">
-            <img src="src/mlbb.png" alt="Mobile Legends: Bang Bang" class="logo">
             <div class="top">
                 <img src="src/ecan.png" alt="ECANツ Icon" class="ecan-img">
                 <div class="ecan-txt">
@@ -41,5 +41,35 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const center = document.querySelector('.center');
+        
+        center.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            const rect = center.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            const deltaX = mouseX - centerX;
+            const deltaY = mouseY - centerY;
+
+            const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+            const maxDistance = Math.sqrt(rect.width * rect.width / 4 + rect.height * rect.height / 4);
+
+            const maxRotation = 20;
+            const rotateX = (deltaY / maxDistance) * maxRotation;
+            const rotateY = -(deltaX / maxDistance) * maxRotation;
+
+            center.style.transform = `translate(-50%, -50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg) perspective(1000px)`;
+        });
+
+        center.addEventListener('mouseleave', () => {
+            center.style.transform = `translate(-50%, -50%) rotateX(0deg) rotateY(0deg) perspective(1000px)`;
+        });
+    
+    </script>
 </body>
 </html>

@@ -18,26 +18,25 @@ body, html {
 }
 
 .center {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.2s ease;
 }
 
 .transparent {
-    position: relative;
     width: 300px;
     height: 400px;
-    background-color: rgba(57, 82, 123, 0.5);
     border-radius: 20px;
 }
 
 .logo {
     position: absolute;
-    top: -50px;
+    top: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 75%;
+    transform: translateX(-50%) translateY(75%);
+    width: 15%;
 }
 
 .top {
@@ -146,6 +145,7 @@ body, html {
 .skin {
     display: inline-block;
     max-width: 35%;
+    margin: 0 3px;
     transition: transform 0.5s ease;
 }
 
@@ -165,6 +165,7 @@ body, html {
 .emote {
     display: inline-block;
     max-width: 40%;
+    margin: 0 3px;
     transition: transform 0.5s ease;
 
 }
