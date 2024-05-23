@@ -45,7 +45,7 @@ body, html {
 
 @media only screen and (max-width: 600px) {
     .logo {
-        top: 50%;
+        top: 100%;
         width: 100%;
     }
 }
